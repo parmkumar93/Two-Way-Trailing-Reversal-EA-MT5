@@ -1,5 +1,3 @@
-# Meta-Trader-5-EA
-
 # Two-Way Trailing Reversal EA (MT5)
 
 A MetaTrader 5 Expert Advisor that implements a simple but robust **two-way trailing reversal** strategy.
