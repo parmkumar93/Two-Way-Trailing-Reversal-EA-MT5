@@ -30,3 +30,38 @@ Trading involves substantial risk of loss. Past performance is not indicative of
 
 ---
 *Version 1.10 – Compile-ready MQL5*
+
+
+
+
+
+
+LotSize (default 0.01)
+Trading volume used for new positions. On netting accounts the reversal order size is automatically increased so it fully reverses the existing position.
+
+DistanceUSD (default 2.00)
+Trailing distance in the symbol’s price units (e.g. $2.00 on Gold / XAUUSD, or 0.00200 on EURUSD). This is how far the pending reversal stop is placed from the extreme price.
+
+MagicNumber (default 2026081301)
+Unique ID so the EA only manages its own trades and ignores other EAs or manual trades.
+
+DeviationPoints (default 50)
+Maximum slippage (in points) allowed when sending market orders.
+
+MaximumSpread (default 0.0)
+Maximum allowed spread in price units. Set to 0 to disable the filter.
+
+EnableTrading (default true)
+Master on/off switch. When false the EA does nothing.
+
+StartWithBuy (default true)
+If there is no open position, the EA opens a Buy first. Set to false to start with a Sell.
+
+EnableLogs (default true)
+Prints detailed information to the Experts tab (very useful for debugging).
+
+PendingOrderExpirationMinutes (default 0)
+How long pending stop orders stay valid. 0 = GTC (Good Till Cancelled).
+
+
+
